@@ -1,0 +1,27 @@
+
+.font {
+    font-size: 24px;
+    font-family: monospace;
+    font-style: oblique;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: larger;
+
+}
+
+body {
+    background-color: gray;
+    
+ 
+  
+ }
+
+.button {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: green;
+    float: left;
+ 
+}
