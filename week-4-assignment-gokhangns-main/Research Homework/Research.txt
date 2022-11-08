@@ -1,0 +1,61 @@
+»»» React class component kullanımı
+
+» ReactJs Component Nedir ?
+»» React Component ‘leri kullanıcı arayüzünü şekillendiren, 
+belirli görevleri olan, class veya fonksiyon olarak tanımlanmış, 
+geriye react elementleri döndüren (bir önceki yazımızda bahsettiğimiz JSX), 
+opsiyonel olarak parametre (daha sonra bunlara prop diyeceğiz) alan yapı taşlarıdır.
+
+»» Component çeşitleri  Class-Based ve Functional Component leridir.
+
+»» Class-Based Components  (Sınıf Tabanlı)
+
+React kütüphanesi içerisindeki “Component” class ‘ından extend olan javascript class ‘ları olarak tanımlayabiliriz.
+Bu class ‘lar React Component ‘ten extend olduğu için Component Lifecycle süreçlerini de barındırır.
+
+
+»» Functional Components  (Fonksiyonel)
+
+Basit olarak react elementleri (JSX) dönen javascript fonksiyonlarıdır. 
+Dummy, dumb component olarak da isimlendirildiği oluyor. 
+Bunun sebebi temelde state ‘e erişemediklerindendir. 
+
+»»» class Component nedir?
+
+React kütüphanesi içerisindeki “Component” class ‘ından extend olan javascript class ‘ları olarak tanımlayabiliriz.
+Bu class ‘lar React Component ‘ten extend olduğu için Component Lifecycle süreçlerini de barındırır.
+
+
+
+»»» life cycle metotları nelerdir?
+
+
+Mounting: Bir component oluştuğunda ve DOM’a eklendiğinde çalışan metotlardır. 
+Bunların neler olduğunu belirtecek olursak ; constructor , static getDerivedStateFromProps , render , componentDidMount metotlarıdır. 
+
+Updating: Bir component props ve state lerdeki değişikliklerden ötürü tekrar render edildiğinde burada ki metotlar devreye girer. 
+Bu metotların neler olduğunu belirtecek olursak ; 
+getDerivedStateFromProps, 
+shouldComponentUpdate, 
+render , 
+getSnapshotbeforeUpdate, 
+componentDidUpdate
+
+Unmounting: Bir component DOM‘ dan çıktığında bu metot çalışmaktadır.
+Bu metodun adı ise componentWillUnmount metodur.
+
+Error Handling : Render işlemi sırasında bir hata olduğunda bu metotlar çalışmaktadır. 
+Bu metotların isimleri şu şekildedir ; 
+static getDerivedStateFromError , 
+componentDidCatch.
+
+
+»»» Niçin Function componenler class componenterinin yerini aldı?
+
+»» Yazması, okunması ve test edilmesi kolaydır.
+»» Daha az kod yazmanızı sağlar.
+»» Daha kolay pratik yapmanızı sağlar.
+»» Performans açısından daha verimlidir.
+
+
+{Kaynakça: https://tr.reactjs.org/}
