@@ -1,0 +1,45 @@
+HTTP Status Hata kodları
+
+HTTP Status hata kodları temel olarak beş başlık altında toplanmıştır. 
+Bunlar sırasıyla;
+1XX Bekle,
+2XX Yanıt,
+3XX Yönlendirme,
+4XX Kötü İstek ve 5XX Sunucu hatalarıdır. 
+
+Status Code 1xx – Bekle Hatası
+
+Status kod 1xx’in anlamı sunucunun isteği aldığını belirmektedir.
+100 numara sunucunun isteği aldığını fakat 101 numara ise client tarafının sunucudan protokol değişikliği istediğini ve
+102 numara ise sunucunun client tarafının isteğini işlediği anlamına gelmektedir.
+
+Status Code 2xx – Yanıt Hatası
+
+Status kod 2xx sunucunun yanıt verdiği durumlarda client tarafına gönderilmektedir.
+200 numaralı status kodu, başarıyla isteğin işlendiği ve yanıtın gönderildiği durumlarda kullanılmaktadır.
+204 numaralı kod ise sunucunun herhangi bir içeriği client tarafına iletmediği anlamına gelmekte
+yani JSON gönderilen içeriğin body kısmının boş olduğuna işaret etmektedir.
+
+Status Code 3xx – Yönlendirme Hatası
+
+Status kod 3xx sunucunun talep edilen kaynaklarının yönlendiriliğini veya
+yerlerinin değiştirildiğini client tarafına belirtmek için gönderdiği bir koddur.
+En popüler olan 304 kodu, client tarafına istediği içeriğin değişmediğini belirten bir kod olarak gönderilmektedir.
+Kullanılan bant genişliğinin azaltılmasında yardımcı olmaktadır.
+
+Status Code 4xx – Kötü İstek Hatası
+
+Sıklıkla karşılaşılan 4xx kodları,
+client tarafının sunucu tarafına istek yaparken yanlış headers,
+API no kullanımı gibi durumlarda sunucunun gönderdiği kod numarasıdır.
+400, domain hatası veya eksik bilgi yani eksik yetkilendirmenin olduğu anlamına gelmektedir. 
+403, client tarafının sunucuya erişemeyeceği anlamına gelmekte.
+404 not found yani içerik bulunamadı hatasıdır.
+
+Status Code 5xx – Sunucu
+
+5xx status kodları sunucu tarafında yanlış giden bir şeyler olduğunu belirtmek için kullanılmaktadır.
+500 numaralı kod, genel bir sunucu problemi olduğunu belirtmek için gönderilmektedir.
+503 numaralı kod ise servisin genel olarak kullanılamadığı anlamına gelmektedir.
+
+Kaynakça: https://www.restapitutorial.com/httpstatuscodes.html

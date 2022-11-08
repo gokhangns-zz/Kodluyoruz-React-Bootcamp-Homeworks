@@ -1,0 +1,55 @@
+»»» Http Request Methods
+»» HTTP (Hyper Text Transfer Protocol)
+
+» İstemci ile host için ihtiyaç duyulan protokolleri sağlamakla beraber,
+bu protokoller bilgiye nasıl erişileceğini, bilginin nasıl transfer edileceğini,
+gösterileceğini ve belirli bir komut geldiğinde nasıl hareket edileceğini belirlemekte.
+
+»» Get 
+
+» Bu metod sunucudan veri almak ve açık kaynaklara erişmek için kullanılır.
+» GET metodu ile sorgu metinleri URL içinde gönderilebilir ve
+aynı sorguyu içeren istekleri daha sonra gönderebilmelerini sağlar.
+Tarayıcıda önceki sorguların “geri” tuşu ile veya tarayıcı geçmişinden çağrılarak aynı sayfalara ulaşabilmeleridir.
+Güvenlik açısından URL’lerin ekranda görüntüleniyor olması ve
+URL’in hedefine ulaşıncaya kadar ve hedef sunucu üzerinde iz kayıtlarında görülebilmesi
+gönderilen parametrelerin gizlilik ihtiyacı varsa sıkıntı yaratabilir.
+Bu nedenlerle hassas isteklerin GET ile gönderilmemelidir.
+
+»» Post
+
+Bu metod ile sunucuya veri yazdırabilinir ve istek parametreleri hem URL içinde hem de mesaj gövdesinde gönderilebilir.
+Tarayıcı üzerinde her geri butonuna bastğımızda yanlışlıkla bir işlemi birden fazla yapmamak için oluşturulmuştur.
+
+»» Put
+
+Bu metod ile servis sağlayıcına gönderilen id ile o kaynağı güncelleyebilirsiniz.
+
+»» Head
+
+Get metodundan farklı olarak geri tuşunda herhangi bir uyarı mesajı bulunmaz.
+Daha çok Get mesajı gönderilmeden önce bir kaynağın olup olmadığını kontrol etmek için kullanılmakta.
+
+»» Delete
+Bu metod ile sunucudaki herhangi bir veriyi silebilirsiniz.
+
+»» Connect
+Bir proxy sunucu üzerinden başka bir sunucuya bağlanmak ve proxy sunucuyu bir tünel gibi kullanmak için kullanılır.
+
+»» Options
+Bu metod belli bir kaynak için kullanılabilecek HTTP metodlarını sunucudan sorgulamak için kullanılır.
+
+»» Trace
+Teşhis amaçlı kullanılan bir metoddur.
+Sunucu bu metodla gelen istek mesajının içeriğini aynen yanıt gövdesinde geri gönderilir ve
+sunucu ile istemci arasında bir vekil sunucu varsa bu sunucunun ve yaptığı değişikliklerin tespiti mümkün olabilir.
+
+»» Patch
+Bu metod bir kaynağa istediğiniz küçük çaplı değişimi yapmanızı sağlar.
+
+»» Search
+Bir dizinin altındaki kaynakları sorgulamak için kullanılır.
+
+Kaynakça:
+https://www.restapitutorial.com/lessons/httpmethods.html
+https://www.tutorialspoint.com/http/http_methods.htm
